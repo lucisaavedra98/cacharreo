@@ -12,10 +12,9 @@ import es.fpdual.eadmin.eadmin.mapper.*;
 import es.fpdual.eadmin.eadmin.modelo.*;
 import es.fpdual.eadmin.eadmin.repositorio.*;
 
-
-//@ManagedBean
-//@ApplicationScoped
 @Repository
+@ManagedBean
+@ApplicationScoped
 public class RepositorioModulosImpl implements RepositorioModulos {
 
     private ModuloMapper mapper;

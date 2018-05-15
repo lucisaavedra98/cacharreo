@@ -13,13 +13,12 @@ import es.fpdual.eadmin.eadmin.modelo.TablaModulos;
 import es.fpdual.eadmin.eadmin.repositorio.RepositorioModulos;
 import es.fpdual.eadmin.eadmin.servicio.ServicioModulos;
 
-
+@Service
 @ManagedBean
 @ApplicationScoped
-@Service
 public class ServicioModulosImpl implements ServicioModulos {
 
-//	@ManagedProperty("#{RepositorioModulosImpl}")
+	@ManagedProperty("#{RepositorioModulos}")
 	public RepositorioModulos repositorioDocumento;
 	
 	@Autowired
